@@ -1,3 +1,4 @@
+#!/usr/bin/python
 import unittest
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
@@ -5,8 +6,8 @@ from selenium.webdriver.common.keys import Keys
 class ComparisonAppTest(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome('/Users/kylebeck/Desktop/challenge/chromedriver')
-        self.base_url = "http://localhost:5000/form"        
+        self.driver = webdriver.Chrome()
+        self.base_url = "http://localhost:5000/form"
 
 
     def test_comparison_form_without_criteria(self):
@@ -30,3 +31,6 @@ class ComparisonAppTest(unittest.TestCase):
 
     def tearDown(self):
         self.driver.close()
+
+if __name__ == '__main__':
+    unittest.main()

@@ -13,11 +13,6 @@ RUN apt-get update
 
 # Install Python
 RUN apt-get install -y python-dev python-pip
-#RUN apt-get install -y python-dev python-pip unzip curl
-
-# Download and extract ChromeDriver for integration testing
-# RUN curl -O https://chromedriver.storage.googleapis.com/2.31/chromedriver_linux64.zip
-# RUN unzip chromedriver_linux64.zip -d /usr/bin
 
 # Add requirements.txt to container
 ADD requirements.txt /challenge/

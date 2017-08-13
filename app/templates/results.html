@@ -1,9 +1,10 @@
-{% extends "base.html" %} 
+<!-- extend from base layout -->
+{% extends "base.html" %}
+
 {% block content %}
-    <h1>Comparison Results</h1>
+    <h1>String Comparison Results</h1>
     <p>
         The {{ metric }} Distance between '{{ string1 }}' and '{{ string2 }}' is {{result}}.<br><br>
-        Click next to perform another comparison.<br><br>
-        <a href="/form">Next</a>
+        <a href="/form">Perform Another Comparison</a>
     </p>
 {% endblock %}

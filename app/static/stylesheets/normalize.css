@@ -9,6 +9,8 @@
  *    IE on Windows Phone and in iOS.
  */
 
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,300|Paytone+One");
+
 html {
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -23,6 +25,7 @@ html {
  */
 
 body {
+  font-family: 'Roboto Slab', sans-serif;
   margin: 0;
 }
 
@@ -39,14 +42,28 @@ section {
   display: block;
 }
 
+p {
+  text-align: center;
+}
+
+label {
+  text-align: left;
+  display: inline-block;
+  width: 105px;
+  line-height: 1.9em;
+}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
 
 h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+  font-size: 2.5em;
+  font-family: 'Paytone One', sans-serif;
+  font-weight: normal;
+  line-height: 1.15em;
+  text-align: center;
 }
 
 /* Grouping content
@@ -103,6 +120,22 @@ pre {
 a {
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
+  position: relative;
+  display: inline-block;
+  /* IE6/7 inline-block hack */
+  *display: inline;
+  *zoom: 1;
+
+  padding: 0.2em 0.5em;
+  border: 1px solid #e3695f;
+  margin: 0 0 10px;
+  color: #fff;
+  background: #e3695f;
+  border-radius: 4px;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 /**
@@ -242,7 +275,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: sans-serif; /* 1 */
+  font-family: 'Roboto Slab', sans-serif; /* 1 */
   font-size: 100%; /* 1 */
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
@@ -279,6 +312,29 @@ html [type="button"], /* 1 */
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; /* 2 */
+}
+
+.styled_form {
+  width: 200px;
+}
+
+.submit_button {
+  position: relative;
+  display: inline-block;
+  /* IE6/7 inline-block hack */
+  *display: inline;
+  *zoom: 1;
+
+  padding: 0.2em 0.5em;
+  border: 1px solid #e3695f;
+  margin: 0 0 10px;
+  color: #fff;
+  background: #e3695f;
+  border-radius: 4px;
+  font-size: 1.5em;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 /**

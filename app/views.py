@@ -3,11 +3,14 @@ from distance import levenshtein, sorensen, jaccard
 from app import app
 from .forms import CompareForm
 
+
+
 @app.route('/')
 @app.route('/index')
 
 def index():
     return render_template('index.html')
+
 
 
 @app.route('/form',methods=['GET', 'POST'])
@@ -22,17 +25,22 @@ def compare():
         return redirect(url_for('results'))
     return render_template('form.html', form=form)
 
+
+
 @app.route('/results')
 
 def results():
     metrics = {'Levenshtein' : levenshtein,
         'Jaccard' : jaccard,
         'Sorensen' : sorensen}
-    return render_template('results.html', \
-        metric=session['metric'], \
-        string1=session['string1'], \
-        string2=session['string2'], \
-        result=metrics[session['metric']]( \
-            session['string1'], \
-            session['string2']))
+    if session.get('string1') and session.get('string2') and session.get('metric'):
+        return render_template('results.html', \
+            metric=session['metric'], \
+            string1=session['string1'], \
+            string2=session['string2'], \
+            result=metrics[session['metric']]( \
+                session['string1'], \
+                session['string2']))
+    else:
+        return render_template('error.html')
 

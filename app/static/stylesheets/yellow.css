@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,300");
+* {
+  box-model: border-box; }
+
+body {
+  background-color: #6d6f79;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif; }
+
+h1 {
+  color: #222534;
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin: 0; }
+
+p {
+  font-weight: 300;
+  line-height: 1.6; }
+
+a {
+  padding: 0.2em 0.5em;
+  border: 1px solid #e3c21c;
+  margin: 0 0 10px;
+  color: #fdfcf7;
+  background: #e3c21c;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap; }
+
+label {
+  text-align: left;
+  display: inline-block;
+  width: 105px;
+  line-height: 1.9em; }
+
+.styled_form {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1em;
+  width: 200px; }
+
+.submit_button {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1em;
+  padding: 0.2em 0.5em;
+  border: 1px solid #e3c21c;
+  margin: 0 0 10px;
+  color: #fdfcf7;
+  background: #e3c21c;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap; }
+
+.box-container, section {
+  padding: 9px;
+  background: #fefdfb;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.3); }
+
+section {
+  margin-bottom: 45px;
+  display: block;
+  padding: 0px;
+  padding-bottom: 20px;
+  width: calc(91.6666666667% - 38.3333333333px);
+  float: left;
+  margin-left: 20px;
+  left: calc(4.1666666667% - 20.8333333333px + 20px);
+  position: relative; }
+  section > p {
+    padding: 20px; }
+  section pre {
+    text-align: left;
+    padding: 5px 20px; }
+  @media screen and (min-width: 900px) {
+    section {
+      width: calc(75% - 35px);
+      float: left;
+      margin-left: 20px;
+      left: calc(12.5% - 22.5px + 20px);
+      position: relative; } }
+  section h2 {
+    margin-top: 0px;
+    background: #cbcedd;
+    color: #2e2c1e;
+    background-color: #cbcedd;
+    background-image: -webkit-linear-gradient(#cbcedd, #e0e2eb);
+    background-image: linear-gradient(#cbcedd, #e0e2eb);
+    padding: 7px 20px;
+    font-weight: 400;
+    position: relative;
+    text-align: center; }
+    section h2 span {
+      border-radius: 3px;
+      font-size: .65em;
+      padding: 5px;
+      float: right; }
+      section h2 span::after {
+        clear: both;
+        content: "";
+        display: table; }
+  section .explanation {
+    padding: 30px 15px;
+    border-bottom: 7px solid #cbcedd;
+    text-align: left; }
+    section .explanation p {
+      color: #222534; }
+    @media screen and (min-width: 900px) {
+      section .explanation {
+        border-bottom: none;
+        width: calc(50% - 30px);
+        float: left;
+        margin-left: 20px; } }
+
+/*# sourceMappingURL=yellow.css.map */

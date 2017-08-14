@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:400,300");
+* {
+  box-model: border-box; }
+
+body {
+  background-color: #549268;
+  text-align: center;
+  font-family: 'Roboto Slab', sans-serif; }
+
+h1 {
+  color: #1a3d25;
+  font-size: 2em;
+  letter-spacing: -1px;
+  margin: 0; }
+
+p {
+  font-weight: 300;
+  line-height: 1.6; }
+
+a {
+  padding: 0.2em 0.5em;
+  border: 1px solid #c43b96;
+  margin: 0 0 10px;
+  color: #fbf9fa;
+  background: #c43b96;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap; }
+
+label {
+  text-align: left;
+  display: inline-block;
+  width: 105px;
+  line-height: 1.9em; }
+
+.styled_form {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1em;
+  width: 200px; }
+
+.submit_button {
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 1em;
+  padding: 0.2em 0.5em;
+  border: 1px solid #c43b96;
+  margin: 0 0 10px;
+  color: #fbf9fa;
+  background: #c43b96;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap; }
+
+.box-container, section {
+  padding: 9px;
+  background: #fdfcfd;
+  box-shadow: 0px 1px 2px 0 rgba(0, 0, 0, 0.3); }
+
+section {
+  margin-bottom: 45px;
+  display: block;
+  padding: 0px;
+  padding-bottom: 20px;
+  width: calc(91.6666666667% - 38.3333333333px);
+  float: left;
+  margin-left: 20px;
+  left: calc(4.1666666667% - 20.8333333333px + 20px);
+  position: relative; }
+  section > p {
+    padding: 20px; }
+  section pre {
+    text-align: left;
+    padding: 5px 20px; }
+  @media screen and (min-width: 900px) {
+    section {
+      width: calc(75% - 35px);
+      float: left;
+      margin-left: 20px;
+      left: calc(12.5% - 22.5px + 20px);
+      position: relative; } }
+  section h2 {
+    margin-top: 0px;
+    background: #c2e5ce;
+    color: #36172c;
+    background-color: #c2e5ce;
+    background-image: -webkit-linear-gradient(#c2e5ce, #dbf0e2);
+    background-image: linear-gradient(#c2e5ce, #dbf0e2);
+    padding: 7px 20px;
+    font-weight: 400;
+    position: relative;
+    text-align: center; }
+    section h2 span {
+      border-radius: 3px;
+      font-size: .65em;
+      padding: 5px;
+      float: right; }
+      section h2 span::after {
+        clear: both;
+        content: "";
+        display: table; }
+  section .explanation {
+    padding: 30px 15px;
+    border-bottom: 7px solid #c2e5ce;
+    text-align: left; }
+    section .explanation p {
+      color: #1a3d25; }
+    @media screen and (min-width: 900px) {
+      section .explanation {
+        border-bottom: none;
+        width: calc(50% - 30px);
+        float: left;
+        margin-left: 20px; } }
+
+/*# sourceMappingURL=violet.css.map */
